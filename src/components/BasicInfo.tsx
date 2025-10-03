@@ -2,13 +2,14 @@ import WritingText from "./WritingText";
 import Aspects from "./ui/aspects";
 import ShinyText from "../components/ShinyText";
 import { Button } from "./ui/button";
+import { SocialButtons } from "./ui/SocialButtons";
 
 const BasicInfo = () => {
   return (
     <div>
-      <h1 className="text-white text-5xl font-bold tracking-tight">
+      <h1 className="text-white text-6xl font-bold  tracking-tight">
         Full Stack <br />{" "}
-        <span className="text-yellow-500 text-6xl ">Developer</span>
+        <span className="text-yellow-500 text-7xl ">Developer</span>
       </h1>
       <WritingText />
       <ShinyText
@@ -26,6 +27,7 @@ const BasicInfo = () => {
       <div className="flex gap-4 px-4 py-5">
         <Button variant="nav">Projects</Button>
         <Button variant="nav">My resume</Button>
+        <SocialButtons />
       </div>
     </div>
   );

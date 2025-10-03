@@ -1,21 +1,9 @@
 import AnimatedBackground from "./components/AnimatedBackground";
 import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
-
+import Galaxy from "./components/Galaxy";
 const App = () => {
-  return (
-    <div className="relative min-h-screen flex flex-col">
-      <div className="absolute inset-0 -z-10">
-        <AnimatedBackground />
-      </div>
-
-      <Navbar />
-
-      <main>
-        <Home />
-      </main>
-    </div>
-  );
+  return <Home />;
 };
 
 export default App;
